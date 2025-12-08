@@ -15,7 +15,8 @@ export default function page() {
         <hr className="w-3/4 border-t border-gray-300 my-6" />
         <NameInput />
         <hr className="w-3/4 border-t border-gray-300 my-6" />
-        <h2 className="text-3xl font-semibold">追加予定</h2>
+
+      <h2 className="text-3xl font-semibold">追加予定</h2>
     </main>
    </>
   )
