@@ -3,10 +3,19 @@
 import { useEffect, useState } from "react"
 import ToolTipButton from "./ToolTipButton";
 
+type User = {
+    id:number;
+    name:string;
+    email:string;
+    company: {
+        name:string;
+    };
+};
+
 
 export default function FetchInput() {
     const [number, setNumber] = useState(0);
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState<User | null>(null);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -27,8 +36,7 @@ export default function FetchInput() {
         }
 
         fetchData()
-
-    },[number])
+    },[number]);
 
     const increment = () => {
         if(number >= 10) return
