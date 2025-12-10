@@ -7,7 +7,7 @@ import ToolTipButton from "./ToolTipButton";
 export default function FetchInput() {
     const [number, setNumber] = useState(0);
     const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(null);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
